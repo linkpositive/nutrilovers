@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DNA Smart | Personal Nutrition | Nutrigenetics</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    'socicon/socicon' %>
+    <%= stylesheet_link_tag    'bootstrap-social/bootstrap-social' %>
+    <%= stylesheet_link_tag    'font-awesome/css/font-awesome.min' %>
+    <%= stylesheet_link_tag    'simple-line-icons/simple-line-icons.min' %>
+    <%= stylesheet_link_tag    'animate/animate.min' %>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN: BASE PLUGINS  -->
+    <%= stylesheet_link_tag    'cubeportfolio/css/cubeportfolio.min' %>
+    <%= stylesheet_link_tag    'owl-carousel/assets/owl.carousel' %>
+    <%= stylesheet_link_tag    'fancybox/jquery.fancybox' %>
+    <%= stylesheet_link_tag    'slider-for-bootstrap/css/slider' %>
+        <!-- END: BASE PLUGINS -->
+	<!-- BEGIN THEME STYLES -->
+    <%= stylesheet_link_tag    'plugins' %>
+    <%= stylesheet_link_tag    'components' %>
+    <%= stylesheet_link_tag    'green2.css' %>
+    <%= stylesheet_link_tag    'custom' %>
+    <!-- END THEME STYLES -->
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
+  
+  	<%= render "layouts/header-home" %>
+  	<%= render "layouts/user-log" %>
+  	<p class="notice"><%= notice %></p>
+  	<p class="alert"><%= alert %></p>
+  	
+    <%= yield %>
+  	<%= render "layouts/footer-home" %>
+  	<%= render "layouts/bottom-script" %>
+  </body>
+</html>
+

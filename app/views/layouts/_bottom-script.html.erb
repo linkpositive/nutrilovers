@@ -1,0 +1,37 @@
+<!-- BEGIN: LAYOUT/FOOTERS/GO2TOP -->
+<div class="c-layout-go2top">
+<i class="icon-arrow-up"></i>
+</div>
+<!-- END: LAYOUT/FOOTERS/GO2TOP -->
+<!-- BEGIN: LAYOUT/BASE/BOTTOM -->
+<!-- BEGIN: CORE PLUGINS -->
+    <!--[if lt IE 9]>
+	<%= javascript_include_tag 'excanvas.min.js' %>
+	<![endif]-->
+	<%= javascript_include_tag 'jquery.min.js' %>
+	<%= javascript_include_tag 'jquery-migrate.min.js' %>
+	<%= javascript_include_tag 'bootstrap.min.js' %>
+	<%= javascript_include_tag 'jquery.easing.min.js' %>
+	<%= javascript_include_tag 'wow.js' %>
+	<%= javascript_include_tag 'reveal-animate.js' %>
+<!-- END: CORE PLUGINS -->
+<!-- BEGIN: LAYOUT PLUGINS -->
+        <%= javascript_include_tag 'cubeportfolio/js/jquery.cubeportfolio.min' %>
+        <%= javascript_include_tag 'owl-carousel/owl.carousel.min' %>
+        <%= javascript_include_tag 'counterup/jquery.counterup.min' %>
+        <%= javascript_include_tag 'counterup/jquery.waypoints.min' %>
+        <%= javascript_include_tag 'fancybox/jquery.fancybox.pack' %>
+        <%= javascript_include_tag 'smooth-scroll/jquery.smooth-scroll' %>
+        <%= javascript_include_tag 'slider-for-bootstrap/js/bootstrap-slider' %>
+        <!-- END: LAYOUT PLUGINS -->
+<!-- BEGIN: THEME SCRIPTS -->
+	<%= javascript_include_tag 'components.js' %>
+	<%= javascript_include_tag 'app.js' %>
+	<script>
+	    $(document).ready(function()
+	    {
+	        App.init(); // init core    
+	    });
+	</script>
+<!-- END: THEME SCRIPTS -->
+<!-- END: LAYOUT/BASE/BOTTOM -->
